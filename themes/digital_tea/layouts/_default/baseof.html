@@ -8,18 +8,13 @@
   <div class="container">
     <div class="row">
       <div class="col-md-3  d-none d-md-block">
-        <hr>
-
         {{- partial "side.html" . -}}
       </div>
       <div class="col">
-        <hr class="offset-1 col-10">
-
         {{- block "body" . }}{{- end }}
       </div>
     </div>
   </div>
-  {{- partial "footer.html" . -}}
   {{- partial "script.html" . -}}
 </body>
 

@@ -19,10 +19,16 @@
 
   </a>
   <div class="offset-2 col-8">
-    <p>{{ .Summary }}</p>
-    <a href="{{ .Permalink }}">...</a>
-    <small>{{ dateFormat "2006 Jan 2" .Date }}</small>
+    <p>{{ .Content}}</p>
+
+    <hr>
+    {{ with .Params.tags }} {{ range . }}
+    <a class="tag" href='{{ "tags" | absURL }}/{{ . | urlize }}'>{{ . }}</a>
+    {{ end }} {{ end }}
+    <hr>
+    {{ template "_internal/disqus.html" . }}
   </div>
 </article>
-<hr class="offset-1 col-10">
+{{- partial "footer.html" . -}}
+
 {{ end }}
