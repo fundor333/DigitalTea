@@ -1,8 +1,7 @@
 {{ define "body" }}
 
-{{ $paginator := .Paginate (.Site.RegularPages ) }}
+{{ range .Pages }}
 
-{{ range $paginator.Pages }}
 <article class="center">
   <div>
     <h2 class="text-center">{{ .Title }}</h2>

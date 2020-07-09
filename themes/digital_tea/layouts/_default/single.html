@@ -1,29 +1,29 @@
 {{ define "body" }}
-<article class="center">
-
-  <a href="{{ .Permalink }}">
+<article class="center post">
 
 
+
+
+  <div class="col-8 offset-2 ">
     {{ if .Params.feature_image }}
     {{ $image := .Resources.GetMatch ( print .Params.feature_image ) }}
-    {{ $resource := $image}}
-    {{ $image := $image.Resize "600x q10" }}
-    {{ $image = $image.Filter  ((images.Pixelate 8) ) ((images.Pixelate 8)) (images.GaussianBlur 80 ) }}
+    <img src="{{  $image.Permalink  }}" class="img-fluid" alt="Card image cap">
+    {{end}}
+    </a>
+    <br>
+    <a href="{{ .Params.feature_link}}">{{.Params.feature_text}}</a>
+    <hr>
+    {{ with .Params.categories }} {{ range . }}
+    <a class="tag" href='{{ "tags" | absURL }}/{{ . | urlize }}'>#{{ . }}</a>
+    {{ end }} {{ end }}
+    <hr>
+  </div>
 
-    {{ $image = $image.Filter (images.GaussianBlur 20 ) }}
-
-    <img data-src="{{ $resource.Permalink }}" src="{{ $image.Permalink }}" alt="{{ $.Title }}"
-      class=" col-8 offset-2 img-fluid">
-    {{ end }}
-
-
-  </a>
   <div class="offset-2 col-8">
-    <p>{{ .Content}}</p>
-
+    {{.Content}}
     <hr>
     {{ with .Params.tags }} {{ range . }}
-    <a class="tag" href='{{ "tags" | absURL }}/{{ . | urlize }}'>{{ . }}</a>
+    <a class="tag" href='{{ "tags" | absURL }}/{{ . | urlize }}'>#{{ . }}</a>
     {{ end }} {{ end }}
     <hr>
     {{ template "_internal/disqus.html" . }}

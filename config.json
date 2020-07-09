@@ -17,7 +17,8 @@
 		]
 	},
 	"params": {
-		"subtitle": "i'am a teapot"
+		"subtitle": "i'am a teapot",
+		"underlogo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque augue justo, accumsan eget leo et, convallis semper nulla.Donec mollis ultricies lacinia.Fusce metus nunc, tincidunt quis mattis sit amet."
 	},
 	"privacy": {
 		"disqus": {

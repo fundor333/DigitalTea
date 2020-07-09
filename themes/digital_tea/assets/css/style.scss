@@ -8,6 +8,23 @@ a {
 	}
 }
 
+article {
+	img {
+		margin-left: auto !important;
+		margin-right: auto !important;
+		display: block !important;
+		max-width: 100%;
+		height: auto;
+	}
+
+	.highlight {
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+	}
+
+}
+
 blockquote {
 	font-family: 'Nothing You Could Do', cursive;
 }
@@ -59,7 +76,51 @@ nav {
 	color: $tea_black;
 
 	&:hover {
-		color: $tea_green;
+		border: 1px solid $tea_green;
+
+		color: $tea_white;
+		background-color: $tea_green;
+	}
+}
+
+.post {
+	@for $i from 2 through 6 {
+
+		h1,
+		h2,
+		h3 {
+			position: relative;
+		}
+
+		h2 {
+			&:before {
+				content: '🫖';
+				position: absolute !important;
+				left: -2rem;
+				top: 0px;
+				color: $tea_green;
+			}
+		}
+
+		h3 {
+			&:before {
+				content: '🍵';
+				position: absolute !important;
+				left: -2rem;
+				top: 0px;
+				color: $tea_green;
+			}
+		}
+
+		h4 {
+			&:before {
+				content: '🧋';
+				position: absolute !important;
+				left: -2rem;
+				top: 0px;
+				color: $tea_green;
+			}
+		}
 	}
 }
 

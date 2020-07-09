@@ -11,6 +11,7 @@
         {{- partial "side.html" . -}}
       </div>
       <div class="col">
+        <h1 class="title col-8 offset-2 text-center">{{ .Title }}</h1>
         {{- block "body" . }}{{- end }}
       </div>
     </div>
