@@ -1,1 +1,68 @@
 @import "colors";
+
+a {
+	color: $tea_black;
+
+	&:hover {
+		color: $tea_green;
+	}
+}
+
+blockquote {
+	font-family: 'Nothing You Could Do', cursive;
+}
+
+body {
+	color: $tea_black;
+	background-color: $tea_white;
+	font-family: 'Special Elite', cursive;
+}
+
+h1 {
+	font-family: 'Eagle Lake', cursive;
+}
+
+hr {
+	border-color: $tea_green;
+}
+
+nav {
+	border-bottom: 2px solid $tea_green;
+	margin-bottom: 10px;
+}
+
+
+.card {
+	border: 2px solid $tea_green;
+	background-color: $tea_white;
+
+	border-radius: 0;
+}
+
+.nav-item {
+	margin-bottom: 10px;
+}
+
+.nav-link {
+	color: $tea_black;
+	font-family: 'Eagle Lake', cursive;
+
+	&:hover {
+		color: $tea_green;
+	}
+}
+
+.page-link {
+	border: 1px solid $tea_green;
+	background-color: $tea_white;
+
+	color: $tea_black;
+
+	&:hover {
+		color: $tea_green;
+	}
+}
+
+#paginator {
+	border-bottom: 0px;
+}

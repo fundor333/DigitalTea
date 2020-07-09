@@ -1,0 +1,9 @@
+{{ define "body" }}
+
+{{ range first 3 .Site.RegularPages }}
+{{ .Render "summary"}}
+{{ end }}
+
+{{ partial "paginator.html" . }}
+
+{{ end }}

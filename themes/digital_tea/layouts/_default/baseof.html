@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html>
-    {{- partial "head.html" . -}}
-    <body>
-        {{- partial "header.html" . -}}
-        <div id="content">
-        {{- block "main" . }}{{- end }}
-        </div>
-        {{- partial "footer.html" . -}}
-    </body>
+{{- partial "head.html" . -}}
+
+<body>
+  {{- partial "header.html" . -}}
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3  d-none d-md-block">
+        <hr>
+
+        {{- partial "side.html" . -}}
+      </div>
+      <div class="col">
+        <hr class="offset-1 col-10">
+
+        {{- block "body" . }}{{- end }}
+      </div>
+    </div>
+  </div>
+  {{- partial "footer.html" . -}}
+  {{- partial "script.html" . -}}
+</body>
+
 </html>
