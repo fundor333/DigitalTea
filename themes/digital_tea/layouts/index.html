@@ -1,6 +1,6 @@
 {{ define "body" }}
 
-{{ $paginator := .Paginate (.Site.RegularPages ) }}
+{{ $paginator := .Paginate (where .Site.RegularPages "Section" "in" site.Params.mainSections) }}
 
 {{ range $paginator.Pages }}
 <article class="center">

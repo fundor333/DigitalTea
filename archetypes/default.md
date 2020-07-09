@@ -9,5 +9,5 @@ tags:
 slug: "{{ .Name }}"
 categories: 
 description: ""
+type: "post"
 ---
-
