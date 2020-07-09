@@ -1,0 +1,43 @@
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <script src="https://kit.fontawesome.com/2f3b6e2e4c.js" crossorigin="anonymous"></script>
+
+
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+  {{ $options := (dict "outputStyle" "compressed") }}
+  {{ $style := resources.Get "css/style.scss" | resources.ToCSS $options }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}" />
+
+  <title>
+    {{ .Title | default .Site.Title }} {{ if not .IsHome }} - {{ .Site.Title }}{{ end }}
+  </title>
+  <meta name="author" content="Fundor333" />
+
+  <meta name="description"
+    content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
+
+  {{ if or (eq .Kind "home") (eq .Kind "page")}} {{ if isset .Params "canonical" }}
+  <link rel="canonical" href="{{ .Params.Canonical}}" />
+  {{ else }}
+  <link rel="canonical" href="{{ .Permalink}}" />
+  {{ end }} {{ end }}
+
+  {{ range .AlternativeOutputFormats -}}
+  {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ end -}}
+
+  <!-- layouts/partials/head.html -->
+  {{ template "_internal/opengraph.html" . }}
+  {{ template  "_internal/google_news.html" . }}
+  {{ template "_internal/schema.html" . }}
+  {{  partial "seo/twitter.html" . }}
+
+  {{ if .Site.Params.gtm_id}}{{- partial "gtm.html" . }}{{ end }}
+</head>
