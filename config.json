@@ -1,0 +1,40 @@
+{
+  "baseURL": "http://digitaltea.com/",
+  "languageCode": "en-us",
+  "title": "Digital Tea",
+  "rssLimit": 10,
+  "theme": "digital_tea",
+  "enableRobotsTXT": true,
+  "linenos": true,
+  "Paginate": 9,
+  "author": {
+    "name": "Fundor 333"
+  },
+  "outputs": {
+    "section": [
+      "HTML",
+      "RSS"
+    ]
+  },
+  "params": {
+    "subtitle": "i'am a teapot"
+  },
+  "privacy": {
+    "disqus": {
+      "disable": false
+    },
+    "googleAnalytics": {
+      "anonymizeIP": true,
+      "disable": false,
+      "respectDoNotTrack": true,
+      "useSessionStorage": true,
+      "pygmentsCodeFences": true,
+      "pygmentsStyle": "native"
+    }
+  },
+  "sitemap": {
+    "changefreq": "dayly",
+    "filename": "sitemap.xml",
+    "priority": 0.8
+  }
+}
