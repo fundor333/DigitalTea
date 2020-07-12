@@ -1,7 +1,7 @@
 {
-	"baseURL": "http://digitaltea.com/",
+	"baseURL": "http://digitaltearoom.com/",
 	"languageCode": "it",
-	"title": "Digital Tea",
+	"title": "Digital Tea Room",
 	"rssLimit": 10,
 	"theme": "digital_tea",
 	"enableRobotsTXT": true,
@@ -19,8 +19,8 @@
 	"params": {
 		"mainSections": ["post"],
 		"mainFeedSections": ["post"],
-		"subtitle": "i'am a teapot",
-		"underlogo": "This is my digital TeaRoom, where I write about tea and anything connect to it. In real life I am a developer and i love tea amd ,akimg tea."
+		"subtitle": "i' am a teapot",
+		"underlogo": "This is my Digital Tea Room, where I write about tea and anything connect to it. In real life I am a developer and i love tea amd ,akimg tea."
 	},
 	"privacy": {
 		"disqus": {
