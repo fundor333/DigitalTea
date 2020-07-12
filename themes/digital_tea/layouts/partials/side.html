@@ -1,18 +1,20 @@
 <ul class="nav flex-column">
   <li class="nav-item">
-    <img class="img-fluid" src="https://fundor333.com/img/pilogo.jpg">
+    <img class="img-fluid" src="https://via.placeholder.com/800">
+    <hr>
+    <h2 class="title">{{.Site.Title}}</h2>
+    <h5 class="title">{{.Site.Params.subtitle}}</h5>
+
+    <hr>
     <p>{{.Site.Params.underlogo}}</p>
+    <hr>
   </li>
   <li class="nav-item">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Argomenti</h5>
-        <p class="card-text">
-          {{range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
-          <a href="{{.Permalink}}">{{.Title}}</a>
-          {{end}}
-        </p>
-      </div>
-    </div>
+    <h5>Argomenti</h5>
+    <p>
+      {{range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+      <a href="{{.Permalink}}">{{.Title}}</a>
+      {{end}}
+    </p>
   </li>
 </ul>

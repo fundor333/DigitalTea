@@ -35,10 +35,6 @@ body {
 	font-family: 'Special Elite', cursive;
 }
 
-h1 {
-	font-family: 'Eagle Lake', cursive;
-}
-
 hr {
 	border-color: $tea_green;
 }
@@ -122,6 +118,10 @@ nav {
 			}
 		}
 	}
+}
+
+.title {
+	font-family: 'Eagle Lake', cursive;
 }
 
 #paginator {
