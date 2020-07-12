@@ -3,13 +3,13 @@
 {{ range .Pages }}
 
 <article class="center">
-  <div>
-    <h2 class="text-center">{{ .Title }}</h2>
-    <h5 class="text-center">{{ dateFormat "2006-01-02" .Date }}</h5>
-  </div>
+  <a href="{{ .Permalink }}">
+    <div>
+      <h2 class="text-center">{{ .Title }}</h2>
+      <h5 class="text-center">{{ dateFormat "2006-01-02" .Date }}</h5>
+    </div>
 
-  <div>
-    <a href="{{ .Permalink }}">
+    <div>
       {{ if .Params.feature_image }}
       {{ $image := .Resources.GetMatch ( print .Params.feature_image ) }}
       {{ $resource := $image}}
@@ -27,8 +27,8 @@
         <p>{{ .Summary }}</p>
         <a href="{{ .Permalink }}">...</a>
       </div>
-    </a>
-  </div>
+    </div>
+  </a>
 
 </article>
 <hr class="offset-1 col-10">
