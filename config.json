@@ -6,7 +6,8 @@
 	"theme": "digital_tea",
 	"enableRobotsTXT": true,
 	"linenos": true,
-	"Paginate": 9,
+	"Paginate": 4,
+	"disqusShortname": "digitaltearoom",
 	"author": {
 		"name": "Fundor 333"
 	},
