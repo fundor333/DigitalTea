@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: ruby:2.4.0-jessie
+      - image: ruby
         environment:
           LANG: C.UTF-8
           TZ: "Europe/Rome"
