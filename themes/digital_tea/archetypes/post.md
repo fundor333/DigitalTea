@@ -8,7 +8,6 @@ feature_text: "Photo by __ __ on Unsplash"
 tags:
 slug: "{{ .Name }}"
 categories: 
-description: ""
 type: "post"
 ---
 
