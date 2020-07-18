@@ -1,0 +1,33 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: ruby:2.4.0-jessie
+        environment:
+          LANG: C.UTF-8
+          TZ: "Europe/Rome"
+    working_directory: ~/repo
+    environment:
+      TZ: "Europe/Rome"
+    steps:
+      - deploy:
+          name: build static pages with Hugo
+          command:
+            curl -X POST -d {}
+            https://api.netlify.com/build_hooks/5f12e018ec63baa7e9c150f3
+
+workflows:
+  version: 2
+  commit:
+    jobs:
+      - build
+  nightly:
+    triggers:
+      - schedule:
+          cron: "0 * * * *"
+          filters:
+            branches:
+              only:
+                - master
+    jobs:
+      - build
