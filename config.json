@@ -1,6 +1,6 @@
 {
 	"baseURL": "https://digitaltearoom.com",
-	"languageCode": "it",
+	"languageCode": "en",
 	"title": "Digital Tea Room",
 	"rssLimit": 10,
 	"theme": "digital_tea",
