@@ -10,9 +10,9 @@
     <hr>
   </li>
   <li class="nav-item">
-    <h5>Argomenti</h5>
+    <h5>Tags</h5>
     <p>
-      {{range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+      {{range ($.Site.GetPage "taxonomyTerm" "tags").Pages }}
       <a href="{{.Permalink}}">{{.Title}}</a>
       {{end}}
     </p>

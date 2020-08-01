@@ -10,19 +10,18 @@
     <br>
     <a href="{{ .Params.feature_link}}">{{.Params.feature_text}}</a>
     <hr>
-    {{ with .Params.categories }} {{ range . }}
+
+    {{ with .Params.tags }} {{ range . }}
     <a class="tag" href='{{ "tags" | absURL }}/{{ . | urlize }}'>#{{ . }}</a>
-    {{ end }} {{ end }}
+    {{ end }}
+    {{ end }}
     <hr>
   </div>
 
   <div class="offset-2 col-8">
     {{.Content}}
     <hr>
-    {{ with .Params.tags }} {{ range . }}
-    <a class="tag" href='{{ "tags" | absURL }}/{{ . | urlize }}'>#{{ . }}</a>
-    {{ end }} {{ end }}
-    <hr>
+
     {{ template "_internal/disqus.html" . }}
   </div>
 </article>

@@ -6,9 +6,7 @@ feature_link: "https://unsplash.com/photos/RiLzlQzwzik"
 feature_text: "Photo by Matt Hoffman on Unsplash"
 tags:
 - ice tea
-- tea
-- summer
-- cold tea
+- preparation
 slug: "ice-tea-without-heat"
 categories: 
 - preparation
