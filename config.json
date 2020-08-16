@@ -19,8 +19,12 @@
 		]
 	},
 	"params": {
-		"mainSections": ["post"],
-		"mainFeedSections": ["post"],
+		"mainSections": [
+			"post"
+		],
+		"mainFeedSections": [
+			"post"
+		],
 		"subtitle": "i' am a teapot",
 		"underlogo": "This is my Digital Tea Room, where I write about tea and anything connect to it. In real life I am a developer and i love tea amd ,akimg tea."
 	},
@@ -38,8 +42,6 @@
 		}
 	},
 	"sitemap": {
-		"changefreq": "dayly",
-		"filename": "sitemap.xml",
-		"priority": 0.8
+		"filename": "sitemap.xml"
 	}
 }
