@@ -25,7 +25,7 @@ I use the Twining Black Peach Tea, 3 bag for normal tea, 4 for little stronger t
 
 Make 90 C hot water and put for 8 minute the tea. After this I let it cool into the fridge to my personal ideal cold tea temperature.
 
-After this i tasted and I find more bitter and more like an hot peach tea.
+After this I tasted and I find more bitter and more like an hot peach tea.
 I like it but it isn't the cold tea I was working to.
 
 ## Brew with ice
