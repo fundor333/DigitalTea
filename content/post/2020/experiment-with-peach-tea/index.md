@@ -13,7 +13,7 @@ categories:
 type: "post"
 ---
 
-I love peach tea when is an hot day. But the ones you found in the shops are with sugars and other this like rose and I don't want something like this. So I start with some experiment to make it home.
+I love peach tea when is an hot day. But the ones you found in the shops are with sugars and other things like rose and I don't want something like this. So I start with some experiment to make it home.
 
 ## The tea
 
