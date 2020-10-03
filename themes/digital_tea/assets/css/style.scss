@@ -80,44 +80,12 @@ nav {
 }
 
 .post {
-	@for $i from 2 through 6 {
 
-		h1,
-		h2,
-		h3 {
-			position: relative;
-		}
-
-		h2 {
-			&:before {
-				content: '🫖';
-				position: absolute !important;
-				left: -2rem;
-				top: 0px;
-				color: $tea_green;
-			}
-		}
-
-		h3 {
-			&:before {
-				content: '🍵';
-				position: absolute !important;
-				left: -2rem;
-				top: 0px;
-				color: $tea_green;
-			}
-		}
-
-		h4 {
-			&:before {
-				content: '🧋';
-				position: absolute !important;
-				left: -2rem;
-				top: 0px;
-				color: $tea_green;
-			}
-		}
-	}
+  h1,
+  h2,
+  h3 {
+    position: relative;
+  }
 }
 
 .title {
