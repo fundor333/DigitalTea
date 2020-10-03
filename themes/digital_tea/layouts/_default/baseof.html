@@ -11,7 +11,17 @@
         <div class="row">
 
           <div class="d-md-block">
-            <img class="img-fluid" src="/img/logo_tearoom.png">
+
+            {{ $image := resources.Get  "/img/logo_tearoom.png" }}
+            {{ $resource := $image}}
+            {{ $image := $image.Resize "600x q10" }}
+            {{ $image = $image.Filter  ((images.Pixelate 8) ) ((images.Pixelate 8)) (images.GaussianBlur 80 ) }}
+
+            {{ $image = $image.Filter (images.GaussianBlur 20 ) }}
+
+            <img data-src="{{ $resource.Permalink }}" src="{{ $image.Permalink }}" alt="{{ $.Title }}"
+              class="img-fluid lazy">
+
           </div>
         </div>
         <div class="row">
