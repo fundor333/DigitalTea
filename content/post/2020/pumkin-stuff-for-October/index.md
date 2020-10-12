@@ -22,7 +22,7 @@ So in this post I make a recipe for the "Witch's Bread", a family recipe for pum
 For start you need to have:
 
 * 900g of boiled pumkin[^2] only the inside of the pumkin
-* 800g of flour 00 
+* 600g of flour 00 
 * 300g of butter
 * 200g of Amaretti (the biscuit)
 * 3 eggs
