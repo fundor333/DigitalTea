@@ -13,3 +13,6 @@ developall: ## Run the site localy with all the article, future or drafts
 
 clean-resorce: ## Clean the directory of the project of chache e meta file
 	hugo --gc
+
+deploy: clean-resorce## Ready for deploy
+	hugo
