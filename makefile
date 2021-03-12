@@ -16,3 +16,7 @@ clean-resorce: ## Clean the directory of the project of chache e meta file
 
 deploy: clean-resorce## Ready for deploy
 	hugo
+
+.PHONY: new
+new: ## Make new object for the blog
+	python make-post.py
