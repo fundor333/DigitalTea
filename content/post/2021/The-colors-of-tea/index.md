@@ -12,3 +12,4 @@ categories:
 type: "post"
 ---
 
+There are multiple type of tea, multiple "color" with different taste and more or less flavour.
