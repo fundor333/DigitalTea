@@ -24,7 +24,10 @@
         <p><a href="{{ .Permalink }}" class="link-post">More...</a></p>
         <div class="row justify-content-md-center">
           <p>
-            <small><i class="fas fa-mug-tea"></i>{{ if gt .ReadingTime 4 }}<i class="fas fa-mug-tea"></i>{{ if gt .ReadingTime 7 }}<i class="fas fa-mug-tea"></i>{{ if gt .ReadingTime 10 }}<i class="fas fa-mug-tea"></i>{{ end }}{{ end }}{{ end }}
+            <small><i class="fas fa-mug-tea"></i>{{ if gt .ReadingTime 4 }}<i
+                class="fas fa-mug-tea"></i>{{ if gt .ReadingTime 7 }}<i
+                class="fas fa-mug-tea"></i>{{ if gt .ReadingTime 10 }}<i
+                class="fas fa-mug-tea"></i>{{ end }}{{ end }}{{ end }}
               Reading time {{.ReadingTime}} minutes
             </small>
           </p>

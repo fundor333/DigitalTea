@@ -35,6 +35,11 @@ body {
 	font-family: 'Special Elite', cursive;
 }
 
+footer {
+	border-top: 2px solid $tea_green;
+	margin-top: 10px;
+}
+
 hr {
 	border-color: $tea_green;
 }
@@ -81,14 +86,16 @@ nav {
 
 .post {
 
-  h1,
-  h2,
-  h3 {
-    position: relative;
-  }
+	h1,
+	h2,
+	h3 {
+		position: relative;
+	}
 }
 
-.tag {    white-space: nowrap;}
+.tag {
+	white-space: nowrap;
+}
 
 .title {
 	font-family: 'Eagle Lake', cursive;
