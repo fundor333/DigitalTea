@@ -11,10 +11,10 @@ developfuture: ## Run the site localy with all the future article
 developall: ## Run the site localy with all the article, future or drafts
 	hugo server --disableFastRender --buildFuture --buildDrafts
 
-clean-resorce: ## Clean the directory of the project of chache e meta file
+clean: ## Clean the directory of the project of chache e meta file
 	hugo --gc
 
-deploy: clean-resorce## Ready for deploy
+deploy: clean## Ready for deploy
 	hugo
 
 .PHONY: new
