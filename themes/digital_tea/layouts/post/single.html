@@ -2,10 +2,12 @@
 <article id="post" class="center post">
 
   <div class="col-8 offset-2 ">
-    {{ if .Params.feature_image }}
-    {{ $image := .Resources.GetMatch ( print .Params.feature_image ) }}
-    <img src="{{  $image.Permalink  }}" class="img-fluid" alt="Card image cap">
-    {{end}}
+
+    {{ $image := .Resources.GetMatch "{cover.jpg,cover.png,cover.jpeg}" }}
+    {{ $resource := imageConfig (add "/content/" $image.RelPermalink) }}
+
+    <img loading="lazy" class="img-fluid lazy" src="{{ $image.Permalink }}" width="{{ $resource.Width }}"
+      height="{{ $resource.Height }}" alt="Card image cap">
     </a>
     <br>
     <a href="{{ .Params.feature_link}}">{{.Params.feature_text}}</a>

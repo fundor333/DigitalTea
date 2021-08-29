@@ -1,7 +1,6 @@
 ---
 title: "Experiment With Peach Tea"
 date: 2020-08-30T09:35:14+02:00
-feature_image: "experiment-with-peach-tea.jpg"
 feature_link: "https://unsplash.com/photos/K6B6_gVYOSc"
 feature_text: "Photo by an_vision on Unsplash"
 tags:
