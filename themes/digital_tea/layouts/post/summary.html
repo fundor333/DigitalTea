@@ -4,20 +4,15 @@
       <h2 class="text-center">{{ .Title }}</h2>
       <h5 class="text-center">{{ dateFormat "2006-01-02" .Date }}</h5>
     </div>
-
+    <div class="text-center">
+      <h2><i class="fas fa-leaf"></i></h2>
+    </div>
     <div>
-      {{ if .Params.feature_image }}
-      {{ $image := .Resources.GetMatch ( print .Params.feature_image ) }}
-      {{ $resource := $image}}
-      {{ $image := $image.Resize "600x q10" }}
-      {{ $image = $image.Filter  ((images.Pixelate 8) ) ((images.Pixelate 8)) (images.GaussianBlur 80 ) }}
+      {{ $image := .Resources.GetMatch "{cover.jpg,cover.png,cover.jpeg}" }}
+      {{ $resource := imageConfig (add "/content/" $image.RelPermalink )}}
 
-      {{ $image = $image.Filter (images.GaussianBlur 20 ) }}
-
-      <img data-src="{{ $resource.Permalink }}" src="{{ $image.Permalink }}" alt="{{ $.Title }}"
-        class=" col-8 offset-2 img-fluid lazy">
-      {{ end }}
-
+      <img src="{{ $image.Permalink }}" width="{{ $resource.Width }}" height="{{ $resource.Height }}"
+        alt="Card image cap" class=" col-8 offset-2 img-fluid lazy" loading="lazy">
 
       <div class="offset-2 col-8">
         <p>{{ .Summary }}</p>

@@ -10,17 +10,9 @@
       <div class="col-md-3">
         <div class="row">
 
-          <div class="d-md-block">
+          <div class="d-none d-md-block">
 
-            {{ $image := resources.Get  "/img/logo_tearoom.png" }}
-            {{ $resource := $image}}
-            {{ $image := $image.Resize "600x q10" }}
-            {{ $image = $image.Filter  ((images.Pixelate 8) ) ((images.Pixelate 8)) (images.GaussianBlur 80 ) }}
-
-            {{ $image = $image.Filter (images.GaussianBlur 20 ) }}
-
-            <img data-src="{{ $resource.Permalink }}" src="{{ $image.Permalink }}" alt="{{ $.Title }}"
-              class="img-fluid lazy">
+            <img loading="lazy" class="img-fluid lazy" src="/img/logo_tearoom.png" width="945" height="945">
 
           </div>
         </div>
@@ -32,8 +24,6 @@
         </div>
       </div>
       <div class="col">
-        <h1 class="title col-8 offset-2 text-center">{{ .Title }}</h1>
-        <hr>
         {{- block "body" . }}{{- end }}
       </div>
     </div>

@@ -1,5 +1,19 @@
 @import "colors";
 
+@import url('https://fonts.googleapis.com/css2?family=Lexend&family=Syne+Mono&display=swap');
+
+
+@font-face {
+	font-family: 'DovesType-Regular';
+	src: url('/fonts/DovesType-Regular.eot');
+	src: url('/fonts/DovesType-Regular.eot') format('embedded-opentype'),
+		url('/fonts/DovesType-Regular.woff2') format('woff2'),
+		url('/fonts/DovesType-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: 150% 300%
+}
+
 a {
 	color: $tea_black;
 
@@ -32,7 +46,11 @@ blockquote {
 body {
 	color: $tea_black;
 	background-color: $tea_white;
-	font-family: 'Special Elite', cursive;
+	font-family: 'Lexend', sans-serif !important;
+	text-rendering: optimizeLegibility;
+	font-feature-settings: "kern"1;
+	font-feature-settings: "lnum"1;
+	font-kerning: normal;
 }
 
 footer {

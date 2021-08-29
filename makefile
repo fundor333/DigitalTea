@@ -11,12 +11,21 @@ developfuture: ## Run the site localy with all the future article
 developall: ## Run the site localy with all the article, future or drafts
 	hugo server --disableFastRender --buildFuture --buildDrafts
 
-clean: ## Clean the directory of the project of chache e meta file
+img: ## Resize img
+	hugo
+	sh webp_converter.sh
+	sh avif_converter.sh
+cache: ## Clean the cache
 	hugo --gc
 
-deploy: clean## Ready for deploy
+clean: cache img ## Clean the directory of the project of chache e meta file and other things
+
+.PHONY: run
+run: clean  ## Build the site cleaning all
 	hugo
 
 .PHONY: new
 new: ## Make new object for the blog
 	python make-post.py
+
+deploy: clean run ## Ready to deploy
