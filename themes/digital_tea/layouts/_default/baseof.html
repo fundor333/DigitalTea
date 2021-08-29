@@ -10,7 +10,7 @@
       <div class="col-md-3">
         <div class="row">
 
-          <div class="d-md-block">
+          <div class="d-none d-md-block">
 
             <img loading="lazy" class="img-fluid lazy" src="/img/logo_tearoom.png" width="945" height="945">
 
@@ -24,8 +24,6 @@
         </div>
       </div>
       <div class="col">
-        <h1 class="title col-8 offset-2 text-center">{{ .Title }}</h1>
-        <hr>
         {{- block "body" . }}{{- end }}
       </div>
     </div>

@@ -52,7 +52,7 @@ For them I suggest or:
 
 For better use of them I suggest to eat them with friends when on break or at the tea time.
 
-Can cause dependency.
+Can cause addiction.
 
 Good October for every one.
 

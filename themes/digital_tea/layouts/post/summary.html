@@ -4,7 +4,9 @@
       <h2 class="text-center">{{ .Title }}</h2>
       <h5 class="text-center">{{ dateFormat "2006-01-02" .Date }}</h5>
     </div>
-
+    <div class="text-center">
+      <h2><i class="fas fa-leaf"></i></h2>
+    </div>
     <div>
       {{ $image := .Resources.GetMatch "{cover.jpg,cover.png,cover.jpeg}" }}
       {{ $resource := imageConfig (add "/content/" $image.RelPermalink )}}
