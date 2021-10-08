@@ -1,0 +1,28 @@
+---
+label: Posts
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: feature_link
+  label: feature_link
+- type: text
+  name: feature_text
+  label: feature_text
+- type: list
+  name: tags
+  label: tags
+- type: text
+  name: slug
+  label: slug
+- type: text
+  name: categories
+  label: categories
+- type: text
+  name: type
+  label: type
