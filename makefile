@@ -11,14 +11,10 @@ developfuture: ## Run the site localy with all the future article
 developall: ## Run the site localy with all the article, future or drafts
 	hugo server --disableFastRender --buildFuture --buildDrafts
 
-img: ## Resize img
-	hugo
-	sh webp_converter.sh
-	sh avif_converter.sh
 cache: ## Clean the cache
 	hugo --gc
 
-clean: cache img ## Clean the directory of the project of chache e meta file and other things
+clean: cache ## Clean the directory of the project of chache e meta file and other things
 
 .PHONY: run
 run: clean  ## Build the site cleaning all

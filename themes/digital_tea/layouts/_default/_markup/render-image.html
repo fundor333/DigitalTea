@@ -1,47 +1,62 @@
-{{- $src := ( .Destination | safeURL ) -}}
-{{- if strings.HasPrefix $src "http" -}}
-<img class="img-post" loading="lazy" src="{{ .Destination | safeURL }}" alt="{{ .Text }}" {{ with .Title}}
-  title="{{ . }}" {{ end }} />
-{{- else -}}
+{{ $src :=  .Page.Resources.GetMatch (printf "%s" (.Destination | safeURL)) }}
+
+{{ if $src }}
 <picture>
-  {{ $isJPG := eq (path.Ext .Destination) ".jpg" }}
-  {{ $isPNG := eq (path.Ext .Destination) ".png" }}
 
-  {{ if ($isJPG) -}}
-  {{ $avifPath:= replace .Destination ".jpg" ".avif" }}
-  {{ $avifPathStatic:= (add (add "/content/" .Page.Dir)  $avifPath) }}
+  <!-- AVIF -->
 
-  {{ if (fileExists $avifPathStatic) -}}
-  <source srcset="{{ $avifPath | safeURL }}" type="image/avif">
-  {{- end }}
+  {{ $tinyw := default "500x avif" }}
+  {{ $smallw := default "800x avif" }}
+  {{ $mediumw := default "1200x avif" }}
+  {{ $largew := default "1500x avif" }}
 
-  {{ $webpPath:= replace .Destination ".jpg" ".webp" }}
-  {{ $webpPathStatic:= (add (add "/content/" .Page.Dir)  $webpPath )}}
+  {{ $data := newScratch }}
+  {{ $data.Set "tiny" ($src.Resize $tinyw) }}
+  {{ $data.Set "small" ($src.Resize $smallw) }}
+  {{ $data.Set "medium" ($src.Resize $mediumw) }}
+  {{ $data.Set "large" ($src.Resize $largew) }}
 
-  {{ if (fileExists $webpPathStatic) -}}
-  <source srcset="{{ $webpPath | safeURL }}" type="image/webp">
-  {{- end }}
-  {{- end }}
+  {{ $tiny := $data.Get "tiny" }}
+  {{ $small := $data.Get "small" }}
+  {{ $medium := $data.Get "medium" }}
+  {{ $large := $data.Get "large" }}
 
-  {{ if ($isPNG) -}}
-  {{ $avifPath:= replace .Destination ".png" ".avif" }}
-  {{ $avifPathStatic:= (add (add "/content/" .Page.Dir)  $avifPath )}}
+  <source media="(max-width: 376px)" srcset="{{with $tiny.RelPermalink }}{{.}}{{ end }}">
 
-  {{ if (fileExists $avifPathStatic) -}}
-  <source srcset="{{ $avifPath | safeURL }}" type="image/avif">
-  {{- end }}
+  <source media="(max-width: 992px)" srcset="{{with $small.RelPermalink }}{{.}}{{ end }}">
 
-  {{ $webpPath:= replace .Destination ".png" ".webp" }}
-  {{ $webpPathStatic:= (add (add "/content/" .Page.Dir)  $webpPath )}}
+  <source media="(max-width: 1400px)" srcset="{{with $medium.RelPermalink }}{{.}}{{ end }}">
 
-  {{ if (fileExists $webpPathStatic) -}}
-  <source srcset="{{ $webpPath | safeURL }}" type="image/webp">
-  {{- end }}
-  {{- end }}
+  <source media="(min-width: 1600px)" srcset="{{with $large.RelPermalink }}{{.}}{{ end }}">
 
-  {{ $img := imageConfig (add (add "/content/" .Page.Dir)  .Destination) }}
+  <!-- WebP -->
 
-  <img class="img-post" src="{{ .Destination | safeURL }}" alt="{{ .Text }}" loading="lazy" decoding="async"
-    width="{{ $img.Width }}" height="{{ $img.Height }}" />
+  {{ $tinyw := default "500x webp" }}
+  {{ $smallw := default "800x webp" }}
+  {{ $mediumw := default "1200x webp" }}
+  {{ $largew := default "1500x webp" }}
+
+  {{ $data := newScratch }}
+  {{ $data.Set "tiny" ($src.Resize $tinyw) }}
+  {{ $data.Set "small" ($src.Resize $smallw) }}
+  {{ $data.Set "medium" ($src.Resize $mediumw) }}
+  {{ $data.Set "large" ($src.Resize $largew) }}
+
+  {{ $tiny := $data.Get "tiny" }}
+  {{ $small := $data.Get "small" }}
+  {{ $medium := $data.Get "medium" }}
+  {{ $large := $data.Get "large" }}
+
+  <source media="(max-width: 376px)" srcset="{{with $tiny.RelPermalink }}{{.}}{{ end }}">
+
+  <source media="(max-width: 992px)" srcset="{{with $small.RelPermalink }}{{.}}{{ end }}">
+
+  <source media="(max-width: 1400px)" srcset="{{with $medium.RelPermalink }}{{.}}{{ end }}">
+
+  <source media="(min-width: 1600px)" srcset="{{with $large.RelPermalink }}{{.}}{{ end }}">
+
+
+  <img class="img-post u-photo" src="{{ .Destination | safeURL }}" alt="{{ .Text }}" loading="lazy" decoding="async"
+    width="{{ $src.Width }}" height="{{ $src.Height }}" />
 </picture>
-{{- end -}}
+{{end}}

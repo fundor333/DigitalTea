@@ -1,5 +1,5 @@
 ---
-title: "Pumkin Stuff for October"
+title: "Pumpkin Stuff for October"
 date: 2020-10-13T13:20:06+02:00
 feature_link: "https://unsplash.com/photos/RQrUZ2ZyNW0"
 feature_text: "Photo by Sarah Gualtieri on Unsplash"
@@ -12,15 +12,15 @@ categories:
 type: "post"
 ---
 
-And now it is Autumn, or Fall if you are in the New Continent, but it is everywhere is Pumkin season. 
+And now it is Autumn, or Fall if you are in the New Continent, but it is everywhere is pumpkin season. 
 And it is my favorite Autumn's fruit[^1] and I eat it in any way. And some time I make it for eating it with a good cup of tea. 
 
-So in this post I make a recipe for the "Witch's Bread", a family recipe for pumkin tea cake.
+So in this post I make a recipe for the "Witch's Bread", a family recipe for pumpkin tea cake.
 ![Witch's Bread](presentazione.jpeg)
 
 For start you need to have:
 
-* 900g of boiled pumkin[^2] only the inside of the pumkin
+* 900g of boiled pumpkin[^2] only the inside of the pumpkin
 * 600g of flour 00 
 * 300g of butter
 * 200g of Amaretti (the biscuit)
@@ -29,7 +29,7 @@ For start you need to have:
 
 Break the amaretti in a powder or little pieces.
 
-In a large bow combine pumking, baker power, flour and the butter mixing them as long as they become one uniform compost.
+In a large bow combine pumpkin, baker power, flour and the butter mixing them as long as they become one uniform compost.
 After this you add the eggs and the Amaretti powder.
 
 Mix all as long as they become somthing like a ice cream like in the photo.
