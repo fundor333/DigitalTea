@@ -5,25 +5,37 @@ on:
     branches:
       - master
   schedule:
-    - cron: '0 * * * *'
-      
-
-env:
-  REMOTE: fundor333/digitaltearoom.github.io
-  DEST: public
-  TOKEN: ${{ secrets.TOKEN }}
+    - cron: "0 * * * *"
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
-      - name: 🛎 Check out master
-        uses: actions/checkout@master
+      - name: Checkout repository
+        uses: actions/checkout@v2
         with:
-          fetch-depth: 1
-      - name: 🚀 Build and deploy
-        #env:
-        #  HUGO_ARGS:
-        uses: victoriadrake/hugo-remote@master
+          submodules: "true"
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "14"
+      - name: Install dependencies
+        run: |
+          npm install -g postcss-cli
+          npm install -g autoprefixer
+          npm install -g postcss
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2.4.13
+        with:
+          hugo-version: "latest"
+          extended: true
+      - name: Build
+        run: make deploy
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.TOKEN }}
+          publish_branch: master
+          publish_dir: ./public
+          external_repository: fundor333/digitaltearoom.github.io
+          commit_message: 🚀 Deploy with hugo-remote
