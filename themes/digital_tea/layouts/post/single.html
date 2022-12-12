@@ -6,11 +6,10 @@
   </div>
   <div class="col-8 offset-2 ">
 
-    {{ $image := .Resources.GetMatch "{cover.webp,cover.jpg,cover.png,cover.jpeg}" }}
-    {{ $resource := imageConfig (add "/content/" $image.RelPermalink) }}
+    {{ $img := .Resources.GetMatch "{cover.webp,cover.jpg,cover.png,cover.jpeg}" }}
+    {{ $image := $img.Resize (printf "%dx%d webp" $img.Width $img.Height)}}
 
-    <img loading="lazy" class="img-fluid lazy" src="{{ $image.Permalink }}" width="{{ $resource.Width }}"
-      height="{{ $resource.Height }}" alt="Card image cap">
+    <img loading="lazy" class="img-fluid lazy" src="{{- with $image.RelPermalink -}}{{.}} {{- end -}}" alt="Card image cap">
     </a>
     <br>
     <a href="{{ .Params.feature_link}}">{{.Params.feature_text}}</a>
