@@ -6,7 +6,7 @@
   </div>
   <div class="col-8 offset-2 ">
 
-    {{ $image := .Resources.GetMatch "{cover.jpg,cover.png,cover.jpeg}" }}
+    {{ $image := .Resources.GetMatch "{cover.webp,cover.jpg,cover.png,cover.jpeg}" }}
     {{ $resource := imageConfig (add "/content/" $image.RelPermalink) }}
 
     <img loading="lazy" class="img-fluid lazy" src="{{ $image.Permalink }}" width="{{ $resource.Width }}"

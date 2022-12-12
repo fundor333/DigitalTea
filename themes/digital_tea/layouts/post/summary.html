@@ -8,11 +8,22 @@
       <h2><i class="fas fa-leaf"></i></h2>
     </div>
     <div>
-      {{ $image := .Resources.GetMatch "{cover.jpg,cover.png,cover.jpeg}" }}
-      {{ $resource := imageConfig (add "/content/" $image.RelPermalink )}}
 
-      <img src="{{ $image.Permalink }}" width="{{ $resource.Width }}" height="{{ $resource.Height }}"
-        alt="Card image cap" class=" col-8 offset-2 img-fluid lazy" loading="lazy">
+      {{- $banner := .Resources.GetMatch "{cover.webp,cover.jpg,cover.png,cover.jpeg}" }}
+      {{ $tiny := ($banner.Fill "webp 480x400 q90") }}
+      {{ $small := ($banner.Fill "webp 768x400 q90") }}
+      {{ $medium := ($banner.Fill "webp 1024x400 q90") }}
+      {{ $large := ($banner.Fill "webp 1366x400 q90") }}
+
+      <img
+      srcset="
+          {{- with $tiny.RelPermalink -}}{{.}} 480w{{- end -}}
+          {{- with $small.RelPermalink -}}, {{.}} 768w{{- end -}}
+          {{- with $medium.RelPermalink -}}, {{.}} 1024w{{- end -}}
+          {{- with $large.RelPermalink -}}, {{.}} 1366w{{- end -}}"
+      src="{{ $banner.RelPermalink }}"
+
+      alt="Card image cap" class=" col-8 offset-2 img-fluid lazy" loading="lazy">
 
       <div class="offset-2 col-8">
         <p>{{ .Summary }}</p>
