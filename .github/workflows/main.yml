@@ -6,8 +6,6 @@ on:
       - master
   schedule:
     - cron: "0 * * * *"
-  workflow_run:
-
 jobs:
   build:
     runs-on: ubuntu-latest
