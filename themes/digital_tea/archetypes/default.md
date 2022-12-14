@@ -1,13 +1,18 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
+lead:
+description:
 date: {{ .Date }}
+lastmod:
 draft: true
-feature_image: "{{ .Name }}.jpg"
 feature_link: ""
 feature_text: "Photo by __ __ on Unsplash"
-tags:
 slug: "{{ .Name }}"
-categories: 
-description: ""
+categories:
 type: "post"
+author:
+images:
+tags:
+keywords:
 ---
+

@@ -22,6 +22,8 @@
 	"params": {
 		"favicon": "/img/favicon.ico",
 		"image": "/img/pilogo.jpg",
+		"logo": "/img/pilogo.jpg",
+		"copyright": "I am license of website structure data",
 		"mainSections": [
 			"post"
 		],
@@ -29,7 +31,7 @@
 			"post"
 		],
 		"subtitle": "I' am a teapot",
-		"underlogo": "This is my Digital Tea Room, where I write about tea and anything connect to it. In real life I am a developer and i love tea and making tea."
+		"description": "This is my Digital Tea Room, where I write about tea and anything connect to it. In real life I am a developer and i love tea and making tea."
 	},
 	"privacy": {
 		"disqus": {
