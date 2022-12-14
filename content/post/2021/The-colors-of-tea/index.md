@@ -6,9 +6,10 @@ feature_text: "Photo by Loverna Journey on Unsplash"
 slug: "the-colors-of-tea"
 tags:
 - tea
-categories: 
+categories:
 - tea
 type: "post"
+draft: true
 ---
 
 There are multiple type of tea, multiple "color" with different taste and more or less flavour.

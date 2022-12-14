@@ -11,7 +11,6 @@
 		url('/fonts/DovesType-Regular.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
-	font-stretch: 150% 300%
 }
 
 a {
@@ -47,10 +46,6 @@ body {
 	color: $tea_black;
 	background-color: $tea_white;
 	font-family: 'Lexend', sans-serif !important;
-	text-rendering: optimizeLegibility;
-	font-feature-settings: "kern"1;
-	font-feature-settings: "lnum"1;
-	font-kerning: normal;
 }
 
 footer {
