@@ -8,9 +8,10 @@
 	"linenos": true,
 	"Paginate": 4,
 	"disqusShortname": "digitaltearoom",
-	"googleAnalytics": "UA-44064318-4",
 	"author": {
-		"name": "Fundor 333"
+		"name": "Fundor 333",
+		"twitterpage": "https://twitter.com/fundor333",
+		"avatar": "https://fundor333.com/img/pilogo.jpg"
 	},
 	"outputs": {
 		"section": [
@@ -19,6 +20,8 @@
 		]
 	},
 	"params": {
+		"favicon": "/img/favicon.ico",
+		"image": "/img/pilogo.jpg",
 		"mainSections": [
 			"post"
 		],

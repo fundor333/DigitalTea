@@ -1,0 +1,18 @@
+{{ define "body" }}
+<div class="row container-fluid p-0">
+      {{- partial "header.html" . -}}
+  </div>
+
+<div class="row container-fluid">
+
+{{ $paginator := .Paginate (where .Data.Pages "Section" .Section) }}
+
+{{ range $paginator.Pages }}
+
+{{ .Render "summary" }}
+
+{{ end }}
+{{ partial "paginator.html" . }}
+</div>
+
+{{ end }}

@@ -1,17 +1,38 @@
 {{ define "body" }}
+
+{{ $img := .Resources.GetMatch "{cover.webp,cover.jpg,cover.png,cover.jpeg}" }}
+{{ $image := $img.Resize (printf "%dx%d webp" $img.Width $img.Height)}}
+
+<nav class="d-flex align-items-end"
+style="
+    background-image: url('{{$image.RelPermalink}}');
+    height: 500px;
+    width: auto;
+    background-size: cover;
+  ">
+  <ul  id="navbar"  class="navbar fixed-top navbar-light bg-light opacity-75 nav d-flex justify-content-center">
+    <li class="nav-item text-center">
+      <a class="nav-link active" href="/">
+        <img loading="lazy" src="/img/logo_tearoom.png" alt="{{ .Site.Title }}" class=" h-card rounded img-fluid u-logo lazy" width="30"
+          height="30">
+        {{.Site.Title}}</a>
+    </li>
+    <li class="nav-item"><a class="nav-link" href="/post/">Blog</a></li>
+    <li class="nav-item"><a class="nav-link" href="/pages/about/">Chi siamo</a></li>
+  </ul>
+</nav>
+<div class="d-flex align-items-end justify-content-center p-2">
+  <h1 class="title text-center dark-text">{{ .Title }}</h1>
+</div>
 <article id="post" class="center post">
-  <h1 class="title col-8 offset-2 text-center">{{ .Title }}</h1>
-  <div class="text-center">
-    <h2><i class="fas fa-leaf"></i></h2>
-  </div>
-  <div class="col-8 offset-2 ">
+  <div>
 
     {{ $img := .Resources.GetMatch "{cover.webp,cover.jpg,cover.png,cover.jpeg}" }}
     {{ $image := $img.Resize (printf "%dx%d webp" $img.Width $img.Height)}}
 
-    <img loading="lazy" class="img-fluid lazy" src="{{- with $image.RelPermalink -}}{{.}} {{- end -}}" alt="Card image cap">
-    </a>
     <br>
+    </div>
+    <div class="col-8 offset-2">
     <a href="{{ .Params.feature_link}}">{{.Params.feature_text}}</a>
     <p>
       <small><i class="fas fa-mug-tea"></i>{{ if gt .ReadingTime 4 }}<i
@@ -29,6 +50,9 @@
     {{ end }}
     <hr>
   </div>
+  <div class="text-center">
+    <h2><i class="fas fa-leaf"></i></h2>
+  </div>
 
   <div class="offset-2 col-8">
     {{.Content}}
@@ -38,4 +62,18 @@
   </div>
 </article>
 
+
+<script>
+  window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+
+  document.getElementById("navbar").classList.remove("opacity-75");
+} else {
+  document.getElementById("navbar").classList.add( "opacity-75");
+}
+}
+
+</script>
 {{ end }}
