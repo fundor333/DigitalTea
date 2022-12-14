@@ -10,7 +10,7 @@ style="
     width: auto;
     background-size: cover;
   ">
-  <ul  id="navbar"  class="navbar fixed-top navbar-light bg-light opacity-75 nav d-flex justify-content-center">
+  <ul  id="navbar-post"  class="navbar fixed-top nav d-flex justify-content-center">
     <li class="nav-item text-center">
       <a class="nav-link active" href="/">
         <img loading="lazy" src="/img/logo_tearoom.png" alt="{{ .Site.Title }}" class=" h-card rounded img-fluid u-logo lazy" width="30"
@@ -62,18 +62,4 @@ style="
   </div>
 </article>
 
-
-<script>
-  window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-
-  document.getElementById("navbar").classList.remove("opacity-75");
-} else {
-  document.getElementById("navbar").classList.add( "opacity-75");
-}
-}
-
-</script>
 {{ end }}

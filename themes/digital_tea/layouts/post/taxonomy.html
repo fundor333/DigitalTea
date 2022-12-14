@@ -1,16 +1,11 @@
 {{ define "body" }}
+{{- partial "schema/schema-list.html" . -}}
 
-<div class="row container-fluid p-0">
-      {{- partial "header.html" . -}}
-</div>
-<br>
-<br>
-<br>
 <div class="row container-fluid">
       <h1 class="title text-center dark-text pb-4">{{ .Title }}</h1>
       {{ .Content }}
 
-{{ $paginator := .Paginate (where .Data.Pages "Section" .Section) }}
+{{ $paginator := .Paginate .Pages  }}
 
 {{ range $paginator.Pages }}
 
