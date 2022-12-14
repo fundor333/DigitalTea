@@ -2,6 +2,7 @@
 	"baseURL": "https://digitaltearoom.com",
 	"languageCode": "en",
 	"title": "Digital Tea Room",
+	"TitleShort": "DTR",
 	"rssLimit": 10,
 	"theme": "digital_tea",
 	"enableRobotsTXT": true,
