@@ -16,8 +16,21 @@
 a {
 	color: $tea_black;
 
+	&:link {
+		text-decoration: none;
+	}
+
+	&:visited {
+		text-decoration: none;
+	}
+
 	&:hover {
 		color: $tea_green;
+		text-decoration: underline;
+	}
+
+	&:active {
+		text-decoration: underline;
 	}
 }
 
@@ -88,6 +101,10 @@ nav {
 	&:hover {
 		color: $tea_green;
 	}
+}
+
+.no-decorator {
+	text-decoration: none;
 }
 
 .page-link {
