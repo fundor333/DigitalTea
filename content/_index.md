@@ -1,5 +1,5 @@
 ---
-title: "Blog"
+title: "Welcome"
 ---
 
 Questa è, come dice il titolo, una sala da tè digitale.
