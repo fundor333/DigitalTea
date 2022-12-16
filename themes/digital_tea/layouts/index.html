@@ -4,13 +4,13 @@
   {{ with .Params.subtitle }}
     <h3 class="subtitle">{{.}}</h3>
   {{ end }}
-  <div class="text-center">
+  <div class="text-center pb-4">
     {{.Content}}
   </div>
-  <div class="container row">
+  <div class="row row-cols-1 row-cols-md-2 row-eq-height">
     {{ range first 6 (where .Site.RegularPages "Section" "post") }}
-    <div class="col-6">
-      {{ .Render "summary"}}
+    <div class="col">
+      {{ .Render "summary" }}
     </div>
     {{ end }}
   </div>

@@ -24,6 +24,11 @@
 
       <div class="offset-2 col-8 text-center">
         <p class="no-decorator">{{ .Summary }}</p>
+        <p>
+          <a href="{{ .Permalink }}" class="link-post">
+            <button type="button" class="btn btn-tea">More...</button>
+          </a>
+        </p>
         <div class="row">
           <div class="col">
             <p>
@@ -45,9 +50,7 @@
             </p>
           </div>
         </div>
-        <p>
-          <a href="{{ .Permalink }}" class="link-post">More...</a>
-        </p>
+
       </div>
     </div>
   </a>

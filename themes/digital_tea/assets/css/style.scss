@@ -15,6 +15,7 @@
 
 a {
 	color: $tea_black;
+	text-decoration: none;
 
 	&:link {
 		text-decoration: none;
@@ -26,11 +27,11 @@ a {
 
 	&:hover {
 		color: $tea_green;
-		text-decoration: underline;
+		text-decoration: none;
 	}
 
 	&:active {
-		text-decoration: underline;
+		text-decoration: none;
 	}
 }
 
@@ -79,11 +80,16 @@ nav {
 	border-bottom: 2px solid $tea_green;
 }
 
-.card {
+.btn-tea {
+	color: $tea_green;
 	border: 2px solid $tea_green;
 	background-color: $tea_white;
-
 	border-radius: 0;
+
+	&:hover {
+		color: $tea_white;
+		background-color: $tea_green;
+	}
 }
 
 .navbar {
@@ -128,6 +134,15 @@ nav {
 	h3 {
 		position: relative;
 	}
+}
+
+
+
+.row-eq-height {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
 }
 
 .tag {

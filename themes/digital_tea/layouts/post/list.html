@@ -8,16 +8,20 @@
 <br>
 <div class="row container-fluid">
       <h1 class="title text-center dark-text pb-4">{{ .Title }}</h1>
-      {{ .Content }}
+      <div class="row pb-4">
+            {{ .Content }}
+      </div>
+      <br>
+      {{ $paginator := .Paginate (where .Data.Pages "Section" .Section) }}
 
-{{ $paginator := .Paginate (where .Data.Pages "Section" .Section) }}
-
-{{ range $paginator.Pages }}
-
-{{ .Render "summary" }}
-
-{{ end }}
-{{ partial "paginator.html" . }}
+      <div class="row row-cols-1 row-cols-md-2 row-eq-height">
+      {{ range $paginator.Pages }}
+      <div class="col">
+            {{ .Render "summary" }}
+      </div>
+      {{ end }}
+      </div>
+      {{ partial "paginator.html" . }}
 </div>
 
 {{ end }}
