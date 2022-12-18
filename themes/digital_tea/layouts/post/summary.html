@@ -2,10 +2,10 @@
   <a href="{{ .Permalink }}">
     <div>
       {{- $banner := .Resources.GetMatch "{cover.webp,cover.jpg,cover.png,cover.jpeg}" }}
-      {{ $tiny := ($banner.Fill "webp 480x400 q90") }}
-      {{ $small := ($banner.Fill "webp 768x400 q90") }}
-      {{ $medium := ($banner.Fill "webp 1024x400 q90") }}
-      {{ $large := ($banner.Fill "webp 1366x400 q90") }}
+      {{ $tiny := ($banner.Fill "webp 480x500 q90") }}
+      {{ $small := ($banner.Fill "webp 768x500 q90") }}
+      {{ $medium := ($banner.Fill "webp 1024x500 q90") }}
+      {{ $large := ($banner.Fill "webp 1366x500 q90") }}
 
       <img
       srcset="
