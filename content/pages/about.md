@@ -3,11 +3,8 @@ title: "Chi siamo"
 type: "pages"
 ---
 
-This is my personal tea space, my personal TeaRoom, in the Digital space.
+Questa è, come dice il titolo, una sala da tè digitale. Qui si legge bevendo una tazza di te e prendendo tutto il tempo necessario.
 
-Here i will put my experiments into tea and similar things and I will updating when I have time to do it.
-Not less, not more.
+In particolare qui scrivo di tè, giochi di ruolo, manga, anime e roba nerd e soprattutto do la mia opinione.
 
-This is more something like a lab journal, with my experiment, annotation and thoughts into tea.
-
-Sometime it will be serius, sometime free thought and sometime very planned post but allwayes about tea.
+Se questo spazio ti piace invita i tuoi amici a prendere un tè qui con noi

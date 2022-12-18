@@ -6,7 +6,7 @@
 <nav class="d-flex align-items-end"
 style="
     background-image: url('{{$image.RelPermalink}}');
-    height: 500px;
+    height: 600px;
     width: auto;
     background-size: cover;
   ">
@@ -61,5 +61,18 @@ style="
     {{ template "_internal/disqus.html" . }}
   </div>
 </article>
-
+<br>
+<br>
+<div class="offset-2 col-8 container">
+  <div class="row row-cols-1 row-cols-md-2 row-eq-height">
+  {{ $related := .Site.RegularPages.Related . | first 4 }}
+  {{ with $related }}
+  {{ range . }}
+  <div class="col">
+    {{ .Render "summary" }}
+  </div>
+  {{ end }}
+  </div>
+{{ end }}
+</div>
 {{ end }}

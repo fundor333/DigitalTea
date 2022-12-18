@@ -15,9 +15,23 @@
 
 a {
 	color: $tea_black;
+	text-decoration: none;
+
+	&:link {
+		text-decoration: none;
+	}
+
+	&:visited {
+		text-decoration: none;
+	}
 
 	&:hover {
 		color: $tea_green;
+		text-decoration: none;
+	}
+
+	&:active {
+		text-decoration: none;
 	}
 }
 
@@ -66,11 +80,16 @@ nav {
 	border-bottom: 2px solid $tea_green;
 }
 
-.card {
+.btn-tea {
+	color: $tea_green;
 	border: 2px solid $tea_green;
 	background-color: $tea_white;
-
 	border-radius: 0;
+
+	&:hover {
+		color: $tea_white;
+		background-color: $tea_green;
+	}
 }
 
 .navbar {
@@ -88,6 +107,10 @@ nav {
 	&:hover {
 		color: $tea_green;
 	}
+}
+
+.no-decorator {
+	text-decoration: none;
 }
 
 .page-link {
@@ -111,6 +134,15 @@ nav {
 	h3 {
 		position: relative;
 	}
+}
+
+
+
+.row-eq-height {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
 }
 
 .tag {

@@ -1,19 +1,11 @@
 <article class="center">
   <a href="{{ .Permalink }}">
     <div>
-      <h2 class="text-center">{{ .Title }}</h2>
-      <h5 class="text-center">{{ dateFormat "2006-01-02" .Date }}</h5>
-    </div>
-    <div class="text-center">
-      <h2><i class="fas fa-leaf"></i></h2>
-    </div>
-    <div>
-
       {{- $banner := .Resources.GetMatch "{cover.webp,cover.jpg,cover.png,cover.jpeg}" }}
-      {{ $tiny := ($banner.Fill "webp 480x400 q90") }}
-      {{ $small := ($banner.Fill "webp 768x400 q90") }}
-      {{ $medium := ($banner.Fill "webp 1024x400 q90") }}
-      {{ $large := ($banner.Fill "webp 1366x400 q90") }}
+      {{ $tiny := ($banner.Fill "webp 480x500 q90") }}
+      {{ $small := ($banner.Fill "webp 768x500 q90") }}
+      {{ $medium := ($banner.Fill "webp 1024x500 q90") }}
+      {{ $large := ($banner.Fill "webp 1366x500 q90") }}
 
       <img
       srcset="
@@ -25,28 +17,40 @@
 
       alt="Card image cap" class=" col-8 offset-2 img-fluid lazy" loading="lazy">
 
-      <div class="offset-2 col-8">
-        <p>{{ .Summary }}</p>
-        <p><a href="{{ .Permalink }}" class="link-post">More...</a></p>
-        <div class="row justify-content-md-center">
-          <p>
-            <small><i class="fas fa-mug-tea"></i>{{ if gt .ReadingTime 4 }}<i
-                class="fas fa-mug-tea"></i>{{ if gt .ReadingTime 7 }}<i
-                class="fas fa-mug-tea"></i>{{ if gt .ReadingTime 10 }}<i
-                class="fas fa-mug-tea"></i>{{ end }}{{ end }}{{ end }}
-              Reading time {{.ReadingTime}} minutes
-            </small>
-          </p>
+      <div class="text-center">
+        <h2>{{ .Title }}</h2>
+        <h5>{{ dateFormat "2006-01-02" .Date }}</h5>
+      </div>
+
+      <div class="offset-2 col-8 text-center">
+        <p class="no-decorator">{{ .Summary }}</p>
+        <p>
+          <a href="{{ .Permalink }}" class="link-post">
+            <button type="button" class="btn btn-tea">More...</button>
+          </a>
+        </p>
+        <div class="row">
+          <div class="col">
+            <p>
+              <small><i class="fas fa-mug-tea"></i>{{ if gt .ReadingTime 4 }}<i
+                  class="fas fa-mug-tea"></i>{{ if gt .ReadingTime 7 }}<i
+                  class="fas fa-mug-tea"></i>{{ if gt .ReadingTime 10 }}<i
+                  class="fas fa-mug-tea"></i>{{ end }}{{ end }}{{ end }}
+                Reading time {{.ReadingTime}} minutes
+              </small>
+            </p>
+          </div>
+          <div class="col">
+            <p>
+              <small>
+                {{ with index (.Params.tags) 0 }}
+                <a class="tag" href='{{ "tags" | absURL }}/{{ . | urlize }}'><i class="fas fa-leaf"></i> {{ . }}</a>
+                {{ end }}
+              </small>
+            </p>
+          </div>
         </div>
-        <div class="row justify-content-md-center">
-          <p>
-            <small>
-              {{ with index (.Params.tags) 0 }}
-              <a class="tag" href='{{ "tags" | absURL }}/{{ . | urlize }}'><i class="fas fa-leaf"></i> {{ . }}</a>
-              {{ end }}
-            </small>
-          </p>
-        </div>
+
       </div>
     </div>
   </a>
