@@ -3,13 +3,13 @@ title: SpyxFamily E Le Poltrone Di Design
 summary: Come SpyxFamily abbia utilizzato le poltrone di design per caratterizzare
   i personaggi nelle copertine
 date: 2022-12-18T22:13:52.000+01:00
-lastmod:
+lastmod: 
 feature_link: https://unsplash.com/photos/9489sFfgk4c
 feature_text: Photo by Dillon Mangum on Unsplash
 slug: SpyxFamily-e-le-poltrone-di-Design
-categories:
-author:
-images:
+categories: 
+author: 
+images: 
 tags:
 - Manga
 - Design
@@ -105,6 +105,14 @@ Divertente anche che il personaggio è fuori misura rispetto al sedia, che poi �
 
 Altra poltrona di Charles and Ray, la potrona di Franky è un sempreverde. La poltrona Eames Lounge è un pezzo che, come Franky, sta bene ovunque e non stonano in nessuno ambiente.
 
-Risulta essere infatti un pezzo facile da produrre in larga scala e con un aspetto
+Il personaggio di Franklin è lo stereotipo della spalla della spia, che si camuffa in mille modi per dare aiuto alla spia e, come la poltrona, si adatta all’ambiente del momento.
+
+### Volume 9 Becky - Poltrona Coconut Lounge
 
 ![Volume](/uploads/2022/12/18/volume_9.png)
+
+La poltrona Coconut Lounge di George Nelson è un pezzo di noce di cocco dove puoi sederti come vuoi. 
+
+Questo avviene perchè la poltrona non ha ne lo schienale ne i braccioli quindi puoi approfittare dello spazio come preferisci. 
+
+A questo si aggiunge il fatto che Becky, come Damian, è una bambina in uno spazio più grande di quello che ha realmente necessità. Ma a differenza di Damian il personaggio è a suo agio nella poltrona tanto che ha portato le sue cose e rende la poltrona quasi una tana.
