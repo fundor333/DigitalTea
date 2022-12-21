@@ -2,22 +2,30 @@
 title: SpyxFamily E Le Poltrone Di Design
 summary: Come SpyxFamily abbia utilizzato le poltrone di design per caratterizzare
   i personaggi nelle copertine
-date: 2022-12-18T22:13:52.000+01:00
-lastmod: 
+date: 2022-12-27T12:13:52.000+01:00
+lastmod:
 feature_link: https://unsplash.com/photos/9489sFfgk4c
 feature_text: Photo by Dillon Mangum on Unsplash
 slug: SpyxFamily-e-le-poltrone-di-Design
-categories: 
-author: 
-images: 
+categories:
+- Z-Target
+author:
+images:
+- /uploads/2022/12/18/volume_1.png
+- /uploads/2022/12/18/volume_2.png
+- /uploads/2022/12/18/volume_3.png
+- /uploads/2022/12/18/volume_4.png
+- /uploads/2022/12/18/volume_5.png
+- /uploads/2022/12/18/volume_6.png
+- /uploads/2022/12/18/volume_7.png
+- /uploads/2022/12/18/volume_8.png
+- /uploads/2022/12/18/volume_9.png
 tags:
 - Manga
 - Design
 - Anime
 keywords:
 - SpyxFamily
-draft: true
-
 ---
 Ci sono delle caratteristiche dei manga che sono trasversali a tutti indipendentemente dal genere e dall’editore: la lettura da destra a sinistra, la carta estremamente economica, il disegno in bianco e nero e la copertina a colori con uno o più dei protagonisti sopra. In questo caso ci fissiamo sulle copertine.
 Solitamente non mi sono mai interessato a perché un personaggio è in copertina ma diventando sempre più vecchio e puntiglioso ho iniziato a cercare di capire perché questo specifico personaggio o un gruppo di personaggi è in copertina.
@@ -111,8 +119,12 @@ Il personaggio di Franklin è lo stereotipo della spalla della spia, che si camu
 
 ![Volume](/uploads/2022/12/18/volume_9.png)
 
-La poltrona Coconut Lounge di George Nelson è un pezzo di noce di cocco dove puoi sederti come vuoi. 
+La poltrona Coconut Lounge di George Nelson è un pezzo di noce di cocco dove puoi sederti come vuoi.
 
-Questo avviene perchè la poltrona non ha ne lo schienale ne i braccioli quindi puoi approfittare dello spazio come preferisci. 
+Questo avviene perchè la poltrona non ha ne lo schienale ne i braccioli quindi puoi approfittare dello spazio come preferisci.
 
 A questo si aggiunge il fatto che Becky, come Damian, è una bambina in uno spazio più grande di quello che ha realmente necessità. Ma a differenza di Damian il personaggio è a suo agio nella poltrona tanto che ha portato le sue cose e rende la poltrona quasi una tana.
+
+## Speranze per il futuro
+
+Questi sono per ora i volumi usciti. Online gira la copertina del 10 volume che non affronto nell articolo per due ragioni: non ha una poltrona/sedia di design e per spiegarla dovrei spiegare mezzo volume, cosa che sono contrario a fare (andate a leggerlo piuttosto) ma spero che i volumi successivi continuino questa collezione di copertine verde petrolio con questi stupende metafore sui personaggi attraverso oggetti di arredo e design. Se continuano con questo ritmo di pubblicazioni probabilmente, a questo articolo, ci sarà un seguito.

@@ -8,12 +8,13 @@ tags:
 - hot tea
 - bakery
 slug: "pumking-stuff-for-october"
-categories: 
+categories:
 type: "post"
+expiryDate: 2022-12-27T12:13:52.000+01:00
 ---
 
-And now it is Autumn, or Fall if you are in the New Continent, but it is everywhere is pumpkin season. 
-And it is my favorite Autumn's fruit[^1] and I eat it in any way. And some time I make it for eating it with a good cup of tea. 
+And now it is Autumn, or Fall if you are in the New Continent, but it is everywhere is pumpkin season.
+And it is my favorite Autumn's fruit[^1] and I eat it in any way. And some time I make it for eating it with a good cup of tea.
 
 So in this post I make a recipe for the "Witch's Bread", a family recipe for pumpkin tea cake.
 ![Witch's Bread](presentazione.jpeg)
@@ -21,11 +22,11 @@ So in this post I make a recipe for the "Witch's Bread", a family recipe for pum
 For start you need to have:
 
 * 900g of boiled pumpkin[^2] only the inside of the pumpkin
-* 600g of flour 00 
+* 600g of flour 00
 * 300g of butter
 * 200g of Amaretti (the biscuit)
 * 3 eggs
-* 20g of baker powder 
+* 20g of baker powder
 
 Break the amaretti in a powder or little pieces.
 
@@ -36,9 +37,9 @@ Mix all as long as they become somthing like a ice cream like in the photo.
 
 ![The ice cream look like](crudo.jpeg)
 
-Put this compost on a baking sheet with a spoon for making the bread. 
+Put this compost on a baking sheet with a spoon for making the bread.
 
-Bake at 200° C for 10 minutes or until golden brown. The outside must be hard and the inside soft. 
+Bake at 200° C for 10 minutes or until golden brown. The outside must be hard and the inside soft.
 This is an example of them.
 
 ![Cooked](cotto.jpeg)
@@ -57,4 +58,4 @@ Can cause addiction.
 Good October for every one.
 
 [^1]: [Wikipedia](https://en.wikipedia.org/wiki/Pumpkin) say it is a fruit, not me
-[^2]: I make it with the pressure cooker, 10 minutes for the pressure cooker to come to pressure. 
+[^2]: I make it with the pressure cooker, 10 minutes for the pressure cooker to come to pressure.

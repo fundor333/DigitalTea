@@ -8,19 +8,20 @@ tags:
 - hot tea
 - tools
 slug: "french-press"
-categories: 
+categories:
 type: "post"
+expiryDate: 2022-12-27T12:13:52.000+01:00
 ---
 
 The other day I was searching for making tea without using teabag or other stuff. This happen because I don't like cleaning them after making tea.
 
-So, after some search, I find the *french press*. 
+So, after some search, I find the *french press*.
 
 ## The French press
 
 The *french press* is a "coffee" thing, where you put boiling water and the coffee and, after some time, press it so the coffee powder will stay down under the press and the coffee will stay over the press. I can make the same thing with the tea's leaf waiting the same time you will wait for it in the teapot.
 
-I buy one, glass and stainless steel, and I love it. Easy to clean and easy to prepare, with it I can make a mug worth of tea. 
+I buy one, glass and stainless steel, and I love it. Easy to clean and easy to prepare, with it I can make a mug worth of tea.
 
 ## Testing
 

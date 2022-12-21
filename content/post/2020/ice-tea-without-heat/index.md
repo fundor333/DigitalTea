@@ -7,16 +7,16 @@ tags:
 - ice tea
 - preparation
 slug: "ice-tea-without-heat"
-categories: 
+categories:
 - preparation
 type: "post"
+expiryDate: 2022-12-27T12:13:52.000+01:00
 ---
 
 Welcome Summer, the hotter season of the year and the season wher I don't like cocking or making tea.
-But I ***need*** drink tea for survive. I like drink tea when working, when I am tired, when I am reading... 
+But I ***need*** drink tea for survive. I like drink tea when working, when I am tired, when I am reading...
 
 So I find a way to make tea without heat. And I don't want to make hot tea, it's summere, I want to make cold tea.
-
 
 ## What you need
 
@@ -25,9 +25,9 @@ This is a list of what I use and the ammount of tea I use. You can change it for
 * A fridge or something similar for make the tea cold
 * Two bottles or something for keep liquid[^1]
 * A liter[^2] of water
-* Two full soup spoon of ***Black Peach Tea*** in leaf 
+* Two full soup spoon of ***Black Peach Tea*** in leaf
 
-If you put the water (better cold, for tap or bottle) in the bottle and put the tea. 
+If you put the water (better cold, for tap or bottle) in the bottle and put the tea.
 
 After I like to shacker the bottle and push all the tea leaf underwater but you can also don't do it. I don't find any difference in the tea and the end.
 
@@ -49,11 +49,11 @@ My personal preference is Rooibos with fruit for cold tea but any one with fruit
 
 ## Ending suggestion
 
-Don't use normal ice. You can make more cold tea and make with the extra tea ice cube so, when you drink it not fell watered. 
+Don't use normal ice. You can make more cold tea and make with the extra tea ice cube so, when you drink it not fell watered.
 
 You can also use the base tea[^4] for make the ice blocks, in this way you can make the ice blocks and the cold tea in the same time.
 
-Drink well and remember 
+Drink well and remember
 
 > Too cold tea can be a bad choise
 

@@ -8,8 +8,9 @@ tags:
 - ice tea
 - hot tea
 slug: "experiment-with-peach-tea"
-categories: 
+categories:
 type: "post"
+expiryDate: 2022-12-27T12:13:52.000+01:00
 ---
 
 I love peach tea when is an hot day. But the ones you found in the shops are with sugars and other things like rose and I don't want something like this. So I start with some experiment to make it home.
