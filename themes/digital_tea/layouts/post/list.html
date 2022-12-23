@@ -9,7 +9,7 @@
 <div class="row container-fluid">
       <h1 class="title text-center dark-text pb-4">{{ .Title }}</h1>
       <div class="row pb-4">
-            {{ .Content }}
+        <div class="col-8 offset-2 text-center">{{ .Content }}</div>
       </div>
       <br>
       {{ $paginator := .Paginate (where .Data.Pages "Section" .Section) }}
