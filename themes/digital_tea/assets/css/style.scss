@@ -149,6 +149,11 @@ nav {
 	white-space: nowrap;
 }
 
+.tea-duotone {
+	--fa-primary-color: #{$tea_darken_green};
+	--fa-secondary-color: #{$tea_darken_green};
+}
+
 .title {
 	font-family: 'Eagle Lake', cursive;
 	text-transform: capitalize;

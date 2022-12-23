@@ -23,29 +23,31 @@
       </div>
 
       <div class="offset-2 col-8 text-center">
-        <p class="no-decorator">{{ .Summary }}</p>
-        <p>
-          <a href="{{ .Permalink }}" class="link-post">
-            <button type="button" class="btn btn-tea">More...</button>
-          </a>
-        </p>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-1 d-flex align-items-center">
+              <i class="fa-duotone fa-chevrons-right tea-duotone fs-4"></i>
+            </div>
+            <div class="col offset-1">
+              <p class="no-decorator">{{ .Summary }}</p>
+            </div>
+          </div>
+        </div>
         <div class="row">
           <div class="col">
+            {{ partial "readingtime.html" . }}
+          </div>
+          <div class="col">
             <p>
-              <small><i class="fas fa-mug-tea"></i>{{ if gt .ReadingTime 4 }}<i
-                  class="fas fa-mug-tea"></i>{{ if gt .ReadingTime 7 }}<i
-                  class="fas fa-mug-tea"></i>{{ if gt .ReadingTime 10 }}<i
-                  class="fas fa-mug-tea"></i>{{ end }}{{ end }}{{ end }}
-                Reading time {{.ReadingTime}} minutes
+              <small>
+                {{ partial "categories.html" . }}
               </small>
             </p>
           </div>
           <div class="col">
             <p>
               <small>
-                {{ with index (.Params.tags) 0 }}
-                <a class="tag" href='{{ "tags" | absURL }}/{{ . | urlize }}'><i class="fas fa-leaf"></i> {{ . }}</a>
-                {{ end }}
+                {{ partial "tags.html" . }}
               </small>
             </p>
           </div>

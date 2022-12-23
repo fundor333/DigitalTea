@@ -1,0 +1,5 @@
+{{ with .Params.tags }}
+  {{ range . }}
+    <a class="tag" href='{{ "tags" | absURL }}/{{ . | urlize }}'><i class="fa-duotone fa-game-console-handheld tea-duotone"></i> {{ . }}</a>
+  {{ end }}
+{{ end }}

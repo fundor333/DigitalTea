@@ -1,0 +1,5 @@
+{{ with .Params.categories }}
+ {{ range . }}
+  <a class="categories" href='{{ "categories" | absURL }}/{{ . | urlize }}'><i class="fa-duotone fa-dragon tea-duotone"></i> {{ . }}</a>
+ {{ end }}
+{{ end }}
