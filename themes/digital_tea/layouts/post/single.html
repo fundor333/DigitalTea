@@ -14,6 +14,9 @@
     </div>
     <div class="col-8 offset-2">
     <a href="{{ .Params.feature_link}}">{{.Params.feature_text}}</a>
+    <hr>
+    <h5>{{ dateFormat "2006-01-02" .Date }}</h5>
+    <hr>
     {{ partial "readingtime.html" . }}
     <hr>
     {{ partial "categories.html" . }}

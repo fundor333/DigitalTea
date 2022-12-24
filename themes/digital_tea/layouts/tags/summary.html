@@ -20,9 +20,9 @@
       {{end}}
 
       <div class="text-center">
-        <h2><i class="fa-duotone fa-dragon tea-duotone"></i> {{ .Title }}</h2>
+        <h2><i class="fa-duotone fa-game-console-handheld tea-duotone"></i> {{ .Title }}</h2>
       </div>
-
+      {{ with .Content}}
       <div class="offset-2 col-8 text-center">
         <div class="container-fluid">
           <div class="row">
@@ -30,11 +30,12 @@
               <i class="fa-duotone fa-chevrons-right tea-duotone fs-4"></i>
             </div>
             <div class="col offset-1">
-              <p class="no-decorator">{{ .Content }}</p>
+              <p class="no-decorator">{{ . }}</p>
             </div>
           </div>
         </div>
       </div>
+      {{ end }}
     </div>
   </a>
 

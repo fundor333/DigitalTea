@@ -7,7 +7,6 @@ slug: "the-colors-of-tea"
 tags:
 - tea
 categories:
-- tea
 type: "post"
 draft: true
 ---

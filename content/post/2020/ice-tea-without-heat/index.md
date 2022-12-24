@@ -8,7 +8,6 @@ tags:
 - preparation
 slug: "ice-tea-without-heat"
 categories:
-- preparation
 type: "post"
 expiryDate: 2022-12-27T12:13:52.000+01:00
 ---
