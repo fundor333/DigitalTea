@@ -1,0 +1,43 @@
+<article class="center">
+  <a href="{{ .Permalink }}">
+    <div>
+      {{ with .Resources.GetMatch "{cover.webp,cover.jpg,cover.png,cover.jpeg}"}}
+      {{- $banner := . }}
+      {{ $tiny := ($banner.Fill "webp 480x500 q90") }}
+      {{ $small := ($banner.Fill "webp 768x500 q90") }}
+      {{ $medium := ($banner.Fill "webp 1024x500 q90") }}
+      {{ $large := ($banner.Fill "webp 1366x500 q90") }}
+
+      <img
+      srcset="
+          {{- with $tiny.RelPermalink -}}{{.}} 480w{{- end -}}
+          {{- with $small.RelPermalink -}}, {{.}} 768w{{- end -}}
+          {{- with $medium.RelPermalink -}}, {{.}} 1024w{{- end -}}
+          {{- with $large.RelPermalink -}}, {{.}} 1366w{{- end -}}"
+      src="{{ $banner.RelPermalink }}"
+
+      alt="Card image cap" class=" col-8 offset-2 img-fluid lazy" loading="lazy">
+      {{end}}
+
+      <div class="text-center">
+        <h2>{{ .Title }}</h2>
+        <h5>{{ dateFormat "2006-01-02" .Date }}</h5>
+      </div>
+
+      <div class="offset-2 col-8 text-center">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-1 d-flex align-items-center">
+              <i class="fa-duotone fa-chevrons-right tea-duotone fs-4"></i>
+            </div>
+            <div class="col offset-1">
+              <p class="no-decorator">{{ .Content }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+
+</article>
+<hr class="offset-1 col-10">

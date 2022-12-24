@@ -1,14 +1,15 @@
 {{ define "body" }}
+
 <div class="row container-fluid">
       <h1 class="title text-center dark-text pb-4">{{ .Title }}</h1>
       <div class="row pb-4">
         <div class="col-8 offset-2 text-center">{{ .Content }}</div>
       </div>
       <br>
-      {{ $paginator := .Paginate .Pages }}
+      {{ $paginator := .Paginate (where .Data.Pages "Section" .Section) }}
 
       <div class="row row-cols-1 row-cols-md-2 row-eq-height">
-      {{ range $paginator.Pages }}
+      {{ range  .Paginator.Pages  }}
       <div class="col">
             {{ .Render "summary" }}
       </div>
