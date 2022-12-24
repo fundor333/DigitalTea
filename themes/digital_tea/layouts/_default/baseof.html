@@ -3,14 +3,8 @@
 {{- partial "head.html" . -}}
 
 <body>
-  <div class="container-fluid p-0">
-    {{if ne .Section "post"}}
-      {{- partial "header.html" . -}}
-      <br>
-      <br>
-      <br>
-    {{end}}
-  </div>
+  {{ partial "img-header.html" . }}
+
   <div class="container-fluid p-0" style="max-width: 970px;">
         {{- block "body" . }}{{- end }}
   </div>

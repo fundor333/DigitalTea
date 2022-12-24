@@ -1,6 +1,6 @@
-
-{{ $img := .Resources.GetMatch "{cover.webp,cover.jpg,cover.png,cover.jpeg}" }}
-{{ $image := $img.Resize (printf "%dx%d webp" $img.Width $img.Height)}}
+{{ $title := .Site.Title }}
+{{ with .Resources.GetMatch "{cover.webp,cover.jpg,cover.png,cover.jpeg}" }}
+{{ $image := .Resize (printf "%dx%d webp" .Width .Height)}}
 
 <nav class="d-flex align-items-end"
 style="
@@ -12,11 +12,19 @@ style="
   <ul  id="navbar-post"  class="navbar fixed-top nav d-flex justify-content-center">
     <li class="nav-item text-center">
       <a class="nav-link active" href="/">
-        <img loading="lazy" src="/img/logo_tearoom.png" alt="{{ .Site.Title }}" class=" h-card rounded img-fluid u-logo lazy" width="30"
+        <img loading="lazy" src="/img/logo_tearoom.png" alt="{{ $title }}" class=" h-card rounded img-fluid u-logo lazy" width="30"
           height="30">
-        {{.Site.Title}}</a>
+        {{$title}}</a>
     </li>
     <li class="nav-item"><a class="nav-link" href="/post/">Blog</a></li>
     <li class="nav-item"><a class="nav-link" href="/pages/about/">Chi siamo</a></li>
   </ul>
 </nav>
+{{ else }}
+<div class="row container-fluid p-0">
+  {{- partial "header.html" . -}}
+</div>
+<br>
+<br>
+<br>
+{{ end }}
