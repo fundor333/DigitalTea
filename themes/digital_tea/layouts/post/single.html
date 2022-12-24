@@ -1,26 +1,7 @@
 {{ define "body" }}
 
-{{ $img := .Resources.GetMatch "{cover.webp,cover.jpg,cover.png,cover.jpeg}" }}
-{{ $image := $img.Resize (printf "%dx%d webp" $img.Width $img.Height)}}
+{{ partial "img-header.html" . }}
 
-<nav class="d-flex align-items-end"
-style="
-    background-image: url('{{$image.RelPermalink}}');
-    height: 600px;
-    width: auto;
-    background-size: cover;
-  ">
-  <ul  id="navbar-post"  class="navbar fixed-top nav d-flex justify-content-center">
-    <li class="nav-item text-center">
-      <a class="nav-link active" href="/">
-        <img loading="lazy" src="/img/logo_tearoom.png" alt="{{ .Site.Title }}" class=" h-card rounded img-fluid u-logo lazy" width="30"
-          height="30">
-        {{.Site.Title}}</a>
-    </li>
-    <li class="nav-item"><a class="nav-link" href="/post/">Blog</a></li>
-    <li class="nav-item"><a class="nav-link" href="/pages/about/">Chi siamo</a></li>
-  </ul>
-</nav>
 <div class="d-flex align-items-end justify-content-center p-2">
   <h1 class="title text-center dark-text">{{ .Title }}</h1>
 </div>

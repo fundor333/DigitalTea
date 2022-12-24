@@ -1,5 +1,5 @@
 ---
-title="🎲 D20 e i suoi amici"
+title: "🎲 D20 e i suoi amici"
 ---
 
 Dado iconico il D20 è diventato a sua volta l'icona dei giochi da tavolo.
