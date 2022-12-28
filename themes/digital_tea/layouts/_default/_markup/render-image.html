@@ -2,6 +2,8 @@
 {{/* Original code from: https://laurakalbag.com/processing-responsive-images-with-hugo/   */}}
 {{/* Just modified a bit to work with render_image hook and output webp images   */}}
 {{/* get file that matches the filename as specified as src=""  */}}
+
+
 {{ $src := .Page.Resources.GetMatch (printf "%s" (.Destination | safeURL))  }}
 {{ $alt := .PlainText | safeHTML }}
 
@@ -34,27 +36,28 @@ image size, as Hugo will upscale small images */}}
 
 
 <a href="{{ $src.RelPermalink }}">
+  <figure>
     <picture>
 
-    <source media="(max-width: 376px)"
-        srcset="{{with $tiny.RelPermalink }}{{.}}{{ end }}">
+      <source media="(max-width: 376px)"
+          srcset="{{with $tiny.RelPermalink }}{{.}}{{ end }}">
 
-    <source media="(max-width: 992px)"
-        srcset="{{with $small.RelPermalink }}{{.}}{{ end }}">
+      <source media="(max-width: 992px)"
+          srcset="{{with $small.RelPermalink }}{{.}}{{ end }}">
 
-    <source media="(max-width: 1400px)"
-        srcset="{{with $medium.RelPermalink }}{{.}}{{ end }}">
+      <source media="(max-width: 1400px)"
+          srcset="{{with $medium.RelPermalink }}{{.}}{{ end }}">
 
-    <source media="(min-width: 1600px)"
-        srcset="{{with $large.RelPermalink }}{{.}}{{ end }}">
+      <source media="(min-width: 1600px)"
+          srcset="{{with $large.RelPermalink }}{{.}}{{ end }}">
 
-    <img
+      <img alt="{{ $alt }}" title="{{ $alt }}" src="{{ $src }}"
+    height="{{ $src.Height}}" width="{{ $src.Width }}" class="img-fluid rounded mx-auto d-block">
 
-   alt="{{ $alt }}" title="{{ $alt }}" src="{{ $src }}"
-   height="{{ $src.Height}}" width="{{ $src.Width }}" class="img-fluid rounded mx-auto d-block">
-
-</picture>
-</a>
+    </picture>
+    {{ with .Title }} <figcaption>{{ . }}</figcaption>{{ end }}
+  </figure>
+  </a>
 
   {{/* Since I do image-response class, the only thing that really
   matters is the height and width matches the image aspect ratio */}}

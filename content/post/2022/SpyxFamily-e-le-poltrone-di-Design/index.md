@@ -39,7 +39,7 @@ Le copertine dei volumi sono tutte costruite nello stesso modo: il protagonista 
 
 ### Volume 1 Loid Forger - Le Corbusier LC2
 
-![Volume 1](volume_1.png) Il primo personaggio della storia e protagonista maschile. Sotto la poltrona ha la attrezzatura da spia messa li mentre il giornale introduce il problema ovvero la tensione tra i due stati che possono far partire la guerra. La poltrona su cui è seduto è la Le Corbusier LC2, una poltrona professionale molto famosa.
+![Volume 1](volume_1.png "Loid Forger - Le Corbusier LC2") Il primo personaggio della storia e protagonista maschile. Sotto la poltrona ha la attrezzatura da spia messa li mentre il giornale introduce il problema ovvero la tensione tra i due stati che possono far partire la guerra. La poltrona su cui è seduto è la Le Corbusier LC2, una poltrona professionale molto famosa.
 
 Questa specifica poltrona da un senso di eleganza e professionalità che vengono riprese sia dalla posa del personaggio che dal suo modo di vestire.
 

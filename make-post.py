@@ -1,10 +1,12 @@
+import datetime
 import os
 
 
 def post_fc():
-    year = input("Give me the Year\n")
+    # get the current year as variable
+    year = str(datetime.datetime.now().year)
     name = input("Give me the title\n")
-    os.system(f"hugo new post/{year}/{name.replace(' ','-')}/index.md")
+    os.system(f"hugo new post/{year}/{name.replace(' ','-').replace(',','').lower()}/index.md")
 
 
 ANSWER = {"post": post_fc}
