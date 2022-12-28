@@ -35,8 +35,7 @@
 image size, as Hugo will upscale small images */}}
 
 
-<a href="{{ $src.RelPermalink }}">
-  <figure>
+<div class="card tea-card rounded">
     <picture>
 
       <source media="(max-width: 376px)"
@@ -52,12 +51,13 @@ image size, as Hugo will upscale small images */}}
           srcset="{{with $large.RelPermalink }}{{.}}{{ end }}">
 
       <img alt="{{ $alt }}" title="{{ $alt }}" src="{{ $src }}"
-    height="{{ $src.Height}}" width="{{ $src.Width }}" class="img-fluid rounded mx-auto d-block">
+    height="{{ $src.Height}}" width="{{ $src.Width }}" class="img-fluid card-img-top">
 
     </picture>
-    {{ with .Title }} <figcaption>{{ . }}</figcaption>{{ end }}
-  </figure>
-  </a>
+    {{ with .Title }}<h5 class="mt-3 card-title text-center">{{ . }}</h5>{{ end }}
+
+</div>
+
 
   {{/* Since I do image-response class, the only thing that really
   matters is the height and width matches the image aspect ratio */}}

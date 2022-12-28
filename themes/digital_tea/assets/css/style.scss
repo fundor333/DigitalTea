@@ -149,6 +149,17 @@ nav {
 	white-space: nowrap;
 }
 
+.tea-card {
+	background-color: $tea_green;
+	color: $tea_white;
+	border: 12px solid;
+	border-color: $tea_green;
+
+	img {
+		border-radius: 3%;
+	}
+}
+
 .tea-duotone {
 	--fa-primary-color: #{$tea_darken_green};
 	--fa-secondary-color: #{$tea_darken_green};
