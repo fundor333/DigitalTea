@@ -45,7 +45,7 @@ Questa specifica poltrona da un senso di eleganza e professionalità che vengono
 
 ### Volume 2 Anya Forger - Divano Marshmallow
 
-![Volume 2](volume_2.png)
+![Volume 2](volume_2.png "Anya Forger - Divano Marshmallow")
 
 Alla figlia Anya viene dedicata la seconda copertina con il divano Marshmallow di George Nelson.
 
@@ -53,7 +53,7 @@ Nelson è diventato famoso per il concetto di "family room" che viene espresso p
 
 ### Volume 3 Yor Forger - La Chaise
 
-![Volume](volume_3.png)
+![Volume](volume_3.png "Yor Forger - La Chaise")
 
 Madre di famiglia di giorno, assassina di notte, è un personaggio elegante ed estremamente specializzato. È uno specialista del suo lavoro anche se nel resto delle cose della vita di tutti i giorni è in difficoltà.
 
@@ -63,7 +63,7 @@ In oltre sia Yor che la poltrona hanno una figura basata sulle loro curve che ve
 
 ### Volume 4 Bond - La Poltrona Ball
 
-![Volume](volume_4.png)
+![Volume](volume_4.png "Bond - La Poltrona Ball")
 
 La quarta copertina ritrae l'ultimo componente dei Forger: Bond il cane.
 
@@ -75,7 +75,7 @@ Vorrei far notare anche la presente di una televisione sferica (come la poltrona
 
 ### Volume 5 Yuri - La poltrona Barcellona
 
-![Volume](volume_5.png)
+![Volume](volume_5.png "Yuri - La poltrona Barcellona")
 
 Molto interessante l'utilizzo della poltrona di Yuri, il fratello di Yor che lavora nel controspionaggio, come panchina, dove il protagonista è seduto in attesa diviso tra il suo lavoro (rappresentati dalla sua uniforme e dall atrezzatura sotto la sedia) e l'amore della sorella (il mazzo di fiori che tiene in mano).
 
@@ -83,7 +83,7 @@ La poltrona, la Barcellona Chair di Ludwig Mies van der Rohe e Lilly Reich è un
 
 ### Volume 6 Fiona - Poltrona Heart Cone
 
-![Volume](volume_6.png)
+![Volume](volume_6.png "Fiona - Poltrona Heart Cone")
 
 La copertina di Fiona mostra subito due cose: il riferimento a Loid (nella posa e nell' arma) e il riferimento alla sua posizione di secondo possibile interesse romantico (nella poltrona e nei regali da San Valentino presenti sotto la poltrona).
 
@@ -91,7 +91,7 @@ La poltrona Heart Cone di Verner Panton richiama anche alla solitudine del perso
 
 ### Volume 7 Damian - Sedia Willow
 
-![Volume](volume_7.png)
+![Volume](volume_7.png "Damian - Sedia Willow")
 
 La sedia Willow di Charles Rennie Mackintosh fa in realtà parte di un set di interni: il Willow Tearoom di Glasgow. La sedia richiama questo senso di regalità e importanza, accentuati anche dall'espressione del personaggio, che cerca di darsi importanza anche se bambino.
 
@@ -99,7 +99,7 @@ Divertente anche che il personaggio è fuori misura rispetto al sedia, che poi �
 
 ### Volume 8 Franky - Poltrona Eames Lounge
 
-![Volume](volume_8.png)
+![Volume](volume_8.png "Franky - Poltrona Eames Lounge")
 
 Altra poltrona di Charles and Ray, la potrona di Franky è un sempreverde. La poltrona Eames Lounge è un pezzo che, come Franky, sta bene ovunque e non stonano in nessuno ambiente.
 
@@ -107,7 +107,7 @@ Il personaggio di Franklin è lo stereotipo della spalla della spia, che si camu
 
 ### Volume 9 Becky - Poltrona Coconut Lounge
 
-![Volume](volume_9.png)
+![Volume](volume_9.png "Becky - Poltrona Coconut Lounge")
 
 La poltrona Coconut Lounge di George Nelson è un pezzo di noce di cocco dove puoi sederti come vuoi.
 
